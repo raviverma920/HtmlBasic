@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to my new website</title>
+  </head>
+  <body>
+    <section class="test">
+      <span>Testing</span>
+      <p>ravi welcome to html</p>
+    </section>
+
+    First number<br />
+    <input id="First" type="number" name="First number" /><br />
+    Last number<br />
+    <input id="second" type="number" name="second number" /><br />
+    Result<br />
+    <input id="Result" type="number" /><br />
+    <button onclick="Add()">add</button>
+    <script>
+      function Add() {
+        const x = document.getElementById('First').value;
+        const y = document.getElementById('second').value;
+        const add = parseInt(x) + parseInt(y);
+        document.getElementById('Result').value = add;
+      }
+    </script>
+  </body>
+</html>
